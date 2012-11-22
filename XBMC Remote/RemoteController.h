@@ -40,6 +40,7 @@
 //    int background_padding;
 //    int alignBottom;
 //    CGFloat screenWidth;
+    IBOutlet UIButton *dynamicButton1, *dynamicButton2, *dynamicButton3, *dynamicButton4;
 }
 
 - (IBAction)startVibrate:(id)sender;

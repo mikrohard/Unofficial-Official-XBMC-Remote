@@ -663,6 +663,14 @@
 		1A9786B21683CF8100B4F3F8 /* HostManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9786B41683CF8100B4F3F8 /* HostManagementViewController.xib */; };
 		1A9786B61683D21C00B4F3F8 /* HostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9786B81683D21C00B4F3F8 /* HostViewController.xib */; };
 		1A9786C01683D87800B4F3F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A9786C21683D87800B4F3F8 /* Localizable.strings */; };
+		C893A397165EC92100703C59 /* remote_button_blue_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C893A38F165EC92100703C59 /* remote_button_blue_down@2x.png */; };
+		C893A398165EC92100703C59 /* remote_button_blue_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C893A390165EC92100703C59 /* remote_button_blue_up@2x.png */; };
+		C893A399165EC92100703C59 /* remote_button_green_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C893A391165EC92100703C59 /* remote_button_green_down@2x.png */; };
+		C893A39A165EC92100703C59 /* remote_button_green_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C893A392165EC92100703C59 /* remote_button_green_up@2x.png */; };
+		C893A39B165EC92100703C59 /* remote_button_red_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C893A393165EC92100703C59 /* remote_button_red_down@2x.png */; };
+		C893A39C165EC92100703C59 /* remote_button_red_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C893A394165EC92100703C59 /* remote_button_red_up@2x.png */; };
+		C893A39D165EC92100703C59 /* remote_button_yellow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C893A395165EC92100703C59 /* remote_button_yellow_down@2x.png */; };
+		C893A39E165EC92100703C59 /* remote_button_yellow_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C893A396165EC92100703C59 /* remote_button_yellow_up@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1379,6 +1387,14 @@
 		1A9786B91683D22300B4F3F8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/HostViewController.xib; sourceTree = "<group>"; };
 		1A9786C11683D87800B4F3F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1A9786C31683D8E900B4F3F8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C893A38F165EC92100703C59 /* remote_button_blue_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remote_button_blue_down@2x.png"; path = "HighRes/remote_button_blue_down@2x.png"; sourceTree = "<group>"; };
+		C893A390165EC92100703C59 /* remote_button_blue_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remote_button_blue_up@2x.png"; path = "HighRes/remote_button_blue_up@2x.png"; sourceTree = "<group>"; };
+		C893A391165EC92100703C59 /* remote_button_green_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remote_button_green_down@2x.png"; path = "HighRes/remote_button_green_down@2x.png"; sourceTree = "<group>"; };
+		C893A392165EC92100703C59 /* remote_button_green_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remote_button_green_up@2x.png"; path = "HighRes/remote_button_green_up@2x.png"; sourceTree = "<group>"; };
+		C893A393165EC92100703C59 /* remote_button_red_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remote_button_red_down@2x.png"; path = "HighRes/remote_button_red_down@2x.png"; sourceTree = "<group>"; };
+		C893A394165EC92100703C59 /* remote_button_red_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remote_button_red_up@2x.png"; path = "HighRes/remote_button_red_up@2x.png"; sourceTree = "<group>"; };
+		C893A395165EC92100703C59 /* remote_button_yellow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remote_button_yellow_down@2x.png"; path = "HighRes/remote_button_yellow_down@2x.png"; sourceTree = "<group>"; };
+		C893A396165EC92100703C59 /* remote_button_yellow_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remote_button_yellow_up@2x.png"; path = "HighRes/remote_button_yellow_up@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1596,6 +1612,14 @@
 		0F55491F151D13C9007E633F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C893A38F165EC92100703C59 /* remote_button_blue_down@2x.png */,
+				C893A390165EC92100703C59 /* remote_button_blue_up@2x.png */,
+				C893A391165EC92100703C59 /* remote_button_green_down@2x.png */,
+				C893A392165EC92100703C59 /* remote_button_green_up@2x.png */,
+				C893A393165EC92100703C59 /* remote_button_red_down@2x.png */,
+				C893A394165EC92100703C59 /* remote_button_red_up@2x.png */,
+				C893A395165EC92100703C59 /* remote_button_yellow_down@2x.png */,
+				C893A396165EC92100703C59 /* remote_button_yellow_up@2x.png */,
 				0F1ABF00157167C400BF9DA7 /* remote_temp.png */,
 				0FAAADFE1541CF5300854BEB /* speech_balloon.png */,
 				0FAAADFB1541CEAD00854BEB /* io.png */,
@@ -2946,6 +2970,14 @@
 				0F4401691674EDC100A28D7B /* icon_exit@2x.png in Resources */,
 				1A9786C01683D87800B4F3F8 /* Localizable.strings in Resources */,
 				1A6742E9168479FD00E8D5AF /* MasterViewController.xib in Resources */,
+				C893A397165EC92100703C59 /* remote_button_blue_down@2x.png in Resources */,
+				C893A398165EC92100703C59 /* remote_button_blue_up@2x.png in Resources */,
+				C893A399165EC92100703C59 /* remote_button_green_down@2x.png in Resources */,
+				C893A39A165EC92100703C59 /* remote_button_green_up@2x.png in Resources */,
+				C893A39B165EC92100703C59 /* remote_button_red_down@2x.png in Resources */,
+				C893A39C165EC92100703C59 /* remote_button_red_up@2x.png in Resources */,
+				C893A39D165EC92100703C59 /* remote_button_yellow_down@2x.png in Resources */,
+				C893A39E165EC92100703C59 /* remote_button_yellow_up@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

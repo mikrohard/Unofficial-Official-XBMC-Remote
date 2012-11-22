@@ -141,6 +141,13 @@
         rightSwipe.cancelsTouchesInView=YES;
         rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
         [self.view addGestureRecognizer:rightSwipe];
+        
+        UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFromLeft:)];
+        leftSwipe.numberOfTouchesRequired = 1;
+        leftSwipe.cancelsTouchesInView = YES;
+        leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+        [self.view addGestureRecognizer:leftSwipe];
+        
         quickHelpImageView.image = [UIImage imageNamed:@"remote quick help"];
         if([[UIScreen mainScreen ] bounds].size.height >= 568){
             CGRect frame = remoteControlView.frame;
@@ -910,6 +917,38 @@ NSInteger buttonAction;
             [self GUIAction:action params:dicParams httpAPIcallback:@"ExecBuiltIn&parameter=ActivateWindow(Pictures)"];
             break;
             
+        case 25:
+            action = @"Input.ExecuteAction";
+            dicParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                         @"red", @"action",
+                         nil];
+            [self GUIAction:action params:dicParams httpAPIcallback:nil];
+            break;
+            
+        case 26:
+            action = @"Input.ExecuteAction";
+            dicParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                         @"green", @"action",
+                         nil];
+            [self GUIAction:action params:dicParams httpAPIcallback:nil];
+            break;
+            
+        case 27:
+            action = @"Input.ExecuteAction";
+            dicParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                         @"yellow", @"action",
+                         nil];
+            [self GUIAction:action params:dicParams httpAPIcallback:nil];
+            break;
+            
+        case 28:
+            action = @"Input.ExecuteAction";
+            dicParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                         @"blue", @"action",
+                         nil];
+            [self GUIAction:action params:dicParams httpAPIcallback:nil];
+            break;
+            
         default:
             break;
     }
@@ -932,6 +971,41 @@ NSInteger buttonAction;
             [self revealMenu:nil];
         }
         [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+- (void)handleSwipeFromLeft:(id)sender {
+    if (gestureZoneView.alpha == 0){
+        if (dynamicButton1.tag == 25) {
+            // we have colored buttons... change back to original
+            dynamicButton1.tag = 21;
+            [dynamicButton1 setBackgroundImage:[UIImage imageNamed:@"remote_button_music_up"] forState:UIControlStateNormal];
+            [dynamicButton1 setBackgroundImage:[UIImage imageNamed:@"remote_button_music_down"] forState:UIControlStateHighlighted];
+            dynamicButton2.tag = 22;
+            [dynamicButton2 setBackgroundImage:[UIImage imageNamed:@"remote_button_movies_up"] forState:UIControlStateNormal];
+            [dynamicButton2 setBackgroundImage:[UIImage imageNamed:@"remote_button_movies_down"] forState:UIControlStateHighlighted];
+            dynamicButton3.tag = 23;
+            [dynamicButton3 setBackgroundImage:[UIImage imageNamed:@"remote_button_tv_up"] forState:UIControlStateNormal];
+            [dynamicButton3 setBackgroundImage:[UIImage imageNamed:@"remote_button_tv_down"] forState:UIControlStateHighlighted];
+            dynamicButton4.tag = 24;
+            [dynamicButton4 setBackgroundImage:[UIImage imageNamed:@"remote_button_pictures_up"] forState:UIControlStateNormal];
+            [dynamicButton4 setBackgroundImage:[UIImage imageNamed:@"remote_button_pictures_up"] forState:UIControlStateHighlighted];
+        }
+        else {
+            // we have original buttons... change to colored
+            dynamicButton1.tag = 25;
+            [dynamicButton1 setBackgroundImage:[UIImage imageNamed:@"remote_button_red_up"] forState:UIControlStateNormal];
+            [dynamicButton1 setBackgroundImage:[UIImage imageNamed:@"remote_button_red_down"] forState:UIControlStateHighlighted];
+            dynamicButton2.tag = 26;
+            [dynamicButton2 setBackgroundImage:[UIImage imageNamed:@"remote_button_green_up"] forState:UIControlStateNormal];
+            [dynamicButton2 setBackgroundImage:[UIImage imageNamed:@"remote_button_green_down"] forState:UIControlStateHighlighted];
+            dynamicButton3.tag = 27;
+            [dynamicButton3 setBackgroundImage:[UIImage imageNamed:@"remote_button_yellow_up"] forState:UIControlStateNormal];
+            [dynamicButton3 setBackgroundImage:[UIImage imageNamed:@"remote_button_yellow_down"] forState:UIControlStateHighlighted];
+            dynamicButton4.tag = 28;
+            [dynamicButton4 setBackgroundImage:[UIImage imageNamed:@"remote_button_blue_up"] forState:UIControlStateNormal];
+            [dynamicButton4 setBackgroundImage:[UIImage imageNamed:@"remote_button_blue_down"] forState:UIControlStateHighlighted];
+        }
     }
 }
 
