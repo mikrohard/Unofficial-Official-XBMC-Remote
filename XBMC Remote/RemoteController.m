@@ -922,7 +922,7 @@ NSInteger buttonAction;
             dicParams = [NSDictionary dictionaryWithObjectsAndKeys:
                          @"red", @"action",
                          nil];
-            [self GUIAction:action params:dicParams httpAPIcallback:nil];
+            [self GUIAction:action params:dicParams httpAPIcallback:@"Action(215)"];
             break;
             
         case 26:
@@ -930,7 +930,7 @@ NSInteger buttonAction;
             dicParams = [NSDictionary dictionaryWithObjectsAndKeys:
                          @"green", @"action",
                          nil];
-            [self GUIAction:action params:dicParams httpAPIcallback:nil];
+            [self GUIAction:action params:dicParams httpAPIcallback:@"Action(216)"];
             break;
             
         case 27:
@@ -938,7 +938,7 @@ NSInteger buttonAction;
             dicParams = [NSDictionary dictionaryWithObjectsAndKeys:
                          @"yellow", @"action",
                          nil];
-            [self GUIAction:action params:dicParams httpAPIcallback:nil];
+            [self GUIAction:action params:dicParams httpAPIcallback:@"Action(217)"];
             break;
             
         case 28:
@@ -946,7 +946,7 @@ NSInteger buttonAction;
             dicParams = [NSDictionary dictionaryWithObjectsAndKeys:
                          @"blue", @"action",
                          nil];
-            [self GUIAction:action params:dicParams httpAPIcallback:nil];
+            [self GUIAction:action params:dicParams httpAPIcallback:@"Action(218)"];
             break;
             
         default:
