@@ -142,12 +142,6 @@
         rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
         [self.view addGestureRecognizer:rightSwipe];
         
-        UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFromLeft:)];
-        leftSwipe.numberOfTouchesRequired = 1;
-        leftSwipe.cancelsTouchesInView = YES;
-        leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
-        [self.view addGestureRecognizer:leftSwipe];
-        
         quickHelpImageView.image = [UIImage imageNamed:@"remote quick help"];
         if([[UIScreen mainScreen ] bounds].size.height >= 568){
             CGRect frame = remoteControlView.frame;
@@ -167,11 +161,18 @@
          UIViewAutoresizingFlexibleWidth
          ];
 
-        int newHeight = remoteControlView.frame.size.height * newWidth / remoteControlView.frame.size.width;        
+        int newHeight = remoteControlView.frame.size.height * newWidth / remoteControlView.frame.size.width;
         [remoteControlView setFrame:CGRectMake(remoteControlView.frame.origin.x, remoteControlView.frame.origin.y, newWidth, newHeight)];
         quickHelpImageView.image = [UIImage imageNamed:@"remote quick help_ipad"];
-                 
+        
     }
+    
+    UISwipeGestureRecognizer *leftSwipeButtons = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFromLeft:)];
+    leftSwipeButtons.numberOfTouchesRequired = 1;
+    leftSwipeButtons.cancelsTouchesInView = YES;
+    leftSwipeButtons.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:leftSwipeButtons];
+    
     UISwipeGestureRecognizer *rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
     rightSwipe.numberOfTouchesRequired = 1;
     rightSwipe.cancelsTouchesInView=NO;
